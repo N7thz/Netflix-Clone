@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 1em arial;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 1%, #161515);
+}
+
+#container {
+    width: 70vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+#container h1 {
+    font-size: 3.5em;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    color: aliceblue;
+}
+
+#container #bloco {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#container .perfil-all h2 {
+    color: #f0f8ff56;
+    text-align: center;
+    margin: 10px;
+}
+
+#container .perfil-all h2:hover  {
+    color: aliceblue;
+}
+
+#container .perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#container .perfil a {
+    display: block;
+    background-color: red;
+    color: transparent;
+}
+
+#container .perfil:hover {
+    border: 2px solid aliceblue;
+    cursor: pointer;
+}
+
+#container .primeiro {
+    background: url(/imgs/icon-amarelo.png);
+    background-size: cover;
+}
+
+#container .segundo {
+    background: url(/imgs/icon-azul.png);
+    background-size: cover;
+}
+
+#container .terceiro {
+    background: url(/imgs/icon-verde.png);
+    background-size: cover;
+}
+
+#container .kids {
+    background: url(/imgs/kids.jpg);
+    background-size: cover;
+}
+
+#container .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    background-color: transparent;
+    color: #f0f8ffa8;
+}
+
+#container .more:hover {
+    background-color: aliceblue;
+    color: #2c2c2c86;
+}
+
+#container .perfil-all .plus {
+    transform: translateX(-13px);
+}
+
+#container  #button button{
+    width: 175px;
+    height: 35px;
+    margin: 30px;
+    background-color: transparent;
+    color: #f0f8ffa8;
+    border: 2px solid #f0f8ffa8;
+}
+
+#container  #button button:hover {
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+
+
+
+

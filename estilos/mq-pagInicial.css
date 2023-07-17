@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    #container h1 {
+        margin: 50px;
+        font-size: 3.5em;
+    }
+
+    #container #bloco {
+        gap: 20px;
+    }
+
+    #container .perfil {
+        width: 90px;
+        height: 90px;
+    }
+
+    #container  #button button {
+        width: 195px;
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container h1  {
+        margin: 30px;
+        font-size: 4em;
+    }
+
+    #container #bloco {
+        margin: 50px;
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+
+    #container .perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    #container .more {
+        font-size: 6em;
+    }
+}

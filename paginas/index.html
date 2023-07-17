@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="/estilos/index.css">
+    <link rel="stylesheet" href="/estilos/mq-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/imgs/netflix-icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imgs/Netflix-Logo.png" alt="netflix-logo">
+            <!--Meun de tela cheia-->
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Bombando</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                        <li><a href="#">Navegar por idiomas</a></li>
+                    </ul>
+                </nav>
+            <!--Menu de tela mobile-->
+                <nav id="nav-bar-mobile">
+                    <p>Navegar</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </nav>      
+        </div>
+        <ul id="icons">
+            <li>
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="pesquisar" id="pesquisar" placeholder="Títulos,gente e genêros">
+                </div> 
+            </li>
+            <li>
+                <i class="fa-regular fa-bell"></i>
+            </li>
+            <li>
+                <img src="/imgs/icon-amarelo.png" alt="perfil" id="user">
+            </li>
+        </ul>
+    </header>
+    <main>
+        <!--Perfil aberto-->
+            <div id="perfil">
+                <div class="quadro-perfil">
+                    <div class="perfis">
+                        <img src="/imgs/icon-azul.png" alt="perfil1">
+                        <p>Perfil 2</p>
+                    </div>
+                    <div class="perfis">
+                        <img src="/imgs/icon-verde.png" alt="perfil2">
+                        <p>Perfil 3</p>
+                    </div>
+                    <div class="perfis">
+                        <img src="/imgs/kids.jpg" alt="perfil3">
+                        <p>Kids</p>
+                    </div>
+                </div>
+                <div class="perfil-options">
+                    <ul>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-pen"></i>
+                            <p>Gerenciar perfis</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-rotate"></i>
+                            <p>Transferir perfil</p>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>Conta</p>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p name="central">Central de Ajuda</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="exit">
+                    <p>Sair da Netflix</p>
+                </div>
+            </div>
+        <div id="background">
+            <video src="/videos/Trailer-black-clover.mp4" autoplay muted loop></video><div id="pos-back"></div>
+            <!--Quadro de informações na frente do video-->
+                <div id="info-serie">
+                    <img src="/imgs/black-clover.webp" alt="black-clover-foto">
+                    <div id="buttons">
+                        <button class="button play">
+                            <i class="fa-solid fa-play"></i>
+                            <p>Assistir</p>
+                        </button>
+                        <button class="button info">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>Mais informações</p>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <!--Menu mobile aberto-->
+            <nav id="menu-mobile-open">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                    <li><a href="#">Navegar por idiomas</a></li>
+                </ul>
+            </nav>
+        <!--Quadro de series-->    
+            <div class="quadro">
+                <h2>Só na Netflix</h2>
+                <div class="series">
+                    <img src="/imgs/so-na-netflix/riverdale.webp" alt="riverdale-foto">
+                    <img src="/imgs/so-na-netflix/sex-education.jpg" alt="sex-education-foto">
+                    <img src="/imgs/so-na-netflix/sandman.jpg" alt="sandman-foto">
+                    <img src="/imgs/so-na-netflix/homen-aranha-3.webp" alt="homen-aranha-3-foto">
+                    <img src="/imgs/so-na-netflix/one-punch-man.webp" alt="one-punch-man-foto">
+                    <img src="/imgs/so-na-netflix/tonya.webp" alt="tonya-foto">
+                </div>
+            </div>
+            <div class="quadro">
+                <h2>Continuar assistindo como perfil 1</h2>
+                <div class="series">
+                    <img src="/imgs/continue-assistindo/hellsing.webp" alt="hellsing-foto">
+                    <img src="/imgs/continue-assistindo/naruto-shippuden.webp" alt="naruto-foto">
+                    <img src="/imgs/continue-assistindo/the-good-place.jpg" alt="the-good-place-foto">
+                    <img src="/imgs/continue-assistindo/pixels.webp" alt="pixels-foto">
+                    <img src="/imgs/continue-assistindo/anime-aleatorio.jpg" alt="anime-foto">
+                    <img src="/imgs/continue-assistindo/homen-aranha-2.webp" alt="homen-aranha-2-foto" id="anime-aleatorio">
+                </div>
+            </div>
+            <div class="quadro">
+                <h2>Em alta</h2>
+                <div class="series">
+                    <img src="/imgs/em-alta/black-mirrow.jpg" alt="black-mirror-foto">
+                    <img src="/imgs/em-alta/resgate-2.jpg" alt="resgate2-foto">
+                    <img src="/imgs/em-alta/chris-rock.jpg" alt="chris-rock-foto">
+                    <img src="/imgs/em-alta/a-entrevista.webp" alt="entrevista-foto">
+                    <img src="/imgs/em-alta/a-grande-aposta.webp" alt="a-grande-aposta-foto">
+                    <img src="/imgs/em-alta/a-rede-social.webp" alt="rede-social-foto">
+                </div>
+            </div>
+        <!--Series top10-->    
+            <div class="quadro">
+                <h2>Brasil:top 10 em filmes hoje</h2>
+                <div class="top10">
+                    <div class="top">
+                        <h1>1</h1>
+                        <img src="/imgs/top10/resgate2.jpg" alt="resgate2-foto">
+                    </div>
+                    <div class="top">
+                        <h1>2</h1>
+                        <img src="/imgs/top10/titas.jpg" alt="titas-foto">
+                    </div>
+                    <div class="top">
+                        <h1>3</h1>
+                        <img src="/imgs/top10/a-descoberta-perfeita.jpg" alt="a-descoberta-perfeita-foto">
+                    </div>
+                    <div class="top">
+                        <h1>4</h1>
+                        <img src="/imgs/top10/a-liga-de-mostros.webp" alt="a-liga-dos-mostros-foto">
+                    </div>
+                    <div class="top">
+                        <h1>5</h1>
+                        <img src="/imgs/top10/atraves-da-janela.jpg" alt="atraves-da-janela-foto">
+                    </div>
+                    <div class="top">
+                        <h1>6</h1>
+                        <img src="/imgs/top10/eu-nunca.jpg" alt="eu-nunca-foto">
+                    </div>
+                    <div class="top">
+                        <h1>7</h1>
+                        <img src="/imgs/top10/casamento-as-cegas.jpg" alt="casamento-as-cegas-foto">
+                    </div>
+                    <div class="top">
+                        <h1>8</h1>
+                        <img src="/imgs/top10/glamorous.jpg" alt="glamorous-foto">
+                    </div>
+                    <div class="top">
+                        <h1>9</h1>
+                        <img src="/imgs/top10/bastidores.jpg" alt="bastidores-foto">
+                    </div>
+                    <div class="top">
+                        <h1>10</h1>
+                        <img src="/imgs/top10/lacos-maternos.jpg" alt="lacos-maternos-foto">
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div id="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div id="descrition">
+            <ul>
+                <li><a href="#">Audiodescrição</a></li>
+                <li><a href="#">Relações com investidores</a></li>
+                <li><a href="#">Avios legais</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Preferências de cookies</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Cartã pré-pago</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Informações corporativas</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Imprensa</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+        </div>
+        <button>Código do serviço</button>
+        <div id="info">
+            <i class="fa-regular fa-copyright"></i>
+            <p>1997-2023 Netflix, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>
