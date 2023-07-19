@@ -12,8 +12,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color01: #f0f8ff;
+    --color02: #0c0b0b;
+    --color03: #6e6e6e;
+    --color04: #2c2c2c67;
+}
+
 body {
-    background-color: #0c0b0b;
+    background-color: var(--color02);
     overflow-x: hidden;
 }
 
@@ -23,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #0c0b0b, #141313);
+    background: linear-gradient(to bottom, var(--color02), #141313);
     position: fixed;
     z-index: 2;
 }
@@ -61,7 +68,7 @@ header {
 
 #nav-bar a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--color01);
     font-size: .7em;
 }
 
@@ -74,7 +81,7 @@ header {
     display: flex;
     align-items: center;
     font-size: .9em;
-    color: aliceblue;
+    color: var(--color01);
     cursor: pointer;
 }
 
@@ -88,28 +95,29 @@ header {
     display: none;
 }
 
-#menu-mobile-open.off {
-    animation: to_bottom 1s ease-in-out;
+#menu-mobile-open.open {
+    animation: to_down 1s ease-in-out;
     width: 350px;
     height: 300px;
-    border-top: 2px solid aliceblue;
+    display: flex;
+    border-top: 2px solid var(--color01);
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#menu-mobile-open.off ul {
+#menu-mobile-open.open ul {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #0c0b0be7;
+    background-color: var(--color02);
 }
 
-#menu-mobile-open.off li {
+#menu-mobile-open.open li {
     width: 100%;
     height: 100%;
     display: flex;
@@ -122,7 +130,7 @@ header {
     background-color: #4444442a;
 }
 
-#menu-mobile-open.off a {
+#menu-mobile-open.open a {
     text-decoration: none;
     color: #f0f8ffb7;
 }
@@ -148,7 +156,7 @@ header {
     position: absolute;
     top: 0;
     right: 150px;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--color01);
 }
 
 #search:hover input {
@@ -159,7 +167,7 @@ header {
     outline: none;
     border: none;
     background-color: transparent;
-    color: aliceblue;
+    color: var(--color01);
     margin: -5px 10px;
 }
 
@@ -187,7 +195,7 @@ header {
 
 #icons i {
     font-size: 1.3em;
-    color: aliceblue;
+    color: var(--color01);
 }
 
 #icons img {
@@ -196,7 +204,7 @@ header {
 }
 
 #icons img:hover {
-    border: 2px solid aliceblue;
+    border: 2px solid var(--color01);
 }
 
 #icons i, #icons img {
@@ -216,9 +224,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #0c0b0be7;
-    border-top: 2px solid aliceblue;
-    color: aliceblue;
+    background-color: var(--color02);
+    border-top: 2px solid var(--color01);
+    color: var(--color01);
     position: absolute;
     top: 6vh;
     right: 10px;
@@ -236,7 +244,7 @@ header {
     gap: 15px;
     padding: 10px;
     margin: 2px;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--color01);
 }
 
 .perfis {
@@ -274,7 +282,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 2px;
-    border-top: 1px solid aliceblue;
+    border-top: 1px solid var(--color01);
 }
 
 #background video {
@@ -317,18 +325,18 @@ header {
 
 #info-serie .info {
     width: 180px;
-    background-color: #2c2c2c8f;
-    color: aliceblue;
+    background-color: var(--color04);
+    color: var(--color01);
 }
 
 #info-serie .info:hover {
-    background-color: #2c2c2c67;
+    background-color: var(--color04);
 }
 
 #pos-back {
     width: 100vw;
     height: 5vh;
-    background: linear-gradient(to top,transparent, #0c0b0b, #0c0b0b,transparent);
+    background: linear-gradient(to top,transparent, var(--color02), var(--color02),transparent);
     position: relative;
     bottom: 35px;
 }
@@ -339,7 +347,7 @@ header {
 }
 
 .quadro h2 {
-    color: aliceblue;
+    color: var(--color01);
     font-size: 1.3em;
     margin: 0px 0px 10px 0px;
     padding-top: 10px;
@@ -361,7 +369,7 @@ header {
 
 .series img:hover {
     scale: 1.1;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--color01);
     z-index: 1;
 }
 
@@ -389,11 +397,9 @@ header {
 
 .quadro .top img:hover {
     scale: 1.1;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--color01);
     z-index: 1;
 }
-
-
 
 footer {
     margin: -300px 0px 0px 30px;
@@ -401,7 +407,7 @@ footer {
 }
 
 #social i {
-    color: aliceblue;
+    color: var(--color01);
     font-size: 2em;
     margin: 10px 30px;
     cursor: pointer;
@@ -420,7 +426,7 @@ footer #descrition {
 
 #descrition a {
     text-decoration: none;
-    color: #6e6e6e;
+    color: var(--color03);
 }
 
 #descrition a:hover {
@@ -430,13 +436,13 @@ footer #descrition {
 footer button {
     width: 150px;
     height: 40px;
-    background-color: #0c0b0b;
-    color: #6e6e6e;
-    border: 1px solid #6e6e6e;
+    background-color: var(--color02);
+    color: var(--color03);
+    border: 1px solid var(--color03);
 }
 
 footer button:hover {
-    color: aliceblue;
+    color: var(--color01);
 }
 
 #info {
@@ -444,7 +450,7 @@ footer button:hover {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
-    color: #6e6e6e;
+    color: var(--color03);
     font-size: .8em;
 }
 
@@ -453,6 +459,13 @@ footer button:hover {
 */
 
 @keyframes to_bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes to_down {
     from {
         opacity: 0;
     }

@@ -1,16 +1,15 @@
 function menu() {
-    let menu_mobile = document.querySelector('#nav-bar-mobile')
+    let btnNav = document.querySelector('#nav-bar-mobile') 
 
-    menu_mobile.addEventListener('click', () => {
-        let menu_open = document.querySelector('#menu-mobile-open')
+    btnNav.addEventListener('click', () => {
+        let menuOpen = document.querySelector('#menu-mobile-open')
 
-        if (menu_open.classList.contains('off')) {
-            menu_open.classList.remove('off')
+        if (menuOpen.classList.contains('open')) {
+            (menuOpen.classList.remove('open'))
         } else {
-            menu_open.classList.add('off')
+            (menuOpen.classList.add('open'))
         }
-
-    })
+    }) 
 }
 
 function perfil() {
